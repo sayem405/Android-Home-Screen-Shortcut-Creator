@@ -31,6 +31,7 @@ public class HomeScreenShortcutManager {
         Intent intent = prepareShortcutIntent();
         if (intent != null) {
             intent.setAction("com.android.launcher.action.INSTALL_SHORTCUT");
+            intent.putExtra("duplicate", false);
             mContext.sendBroadcast(intent);
             return true;
         } else
