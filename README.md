@@ -3,7 +3,7 @@ Android-Home-Screen-Shortcut-Creator
 
 Sample Code of creating/removing app shortcut in home screen:
 
-        HomeScreenShortcutManager homeScreenShortcutManager = new HomeScreenShortcutManager(this);
+        HomeScreenShortcutManager homeScreenShortcutManager = new HomeScreenShortcutManager(context);
         homeScreenShortcutManager.createShortcut();
         homeScreenShortcutManager.removeShortcut();
         
