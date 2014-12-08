@@ -78,6 +78,9 @@ public class HomeScreenShortcutManager {
         } catch (ClassNotFoundException e) {
             Log.e(TAG, EXCEPTION, e);
             return null;
+        } catch (NullPointerException e) {
+            Log.e(TAG, EXCEPTION, e);
+            return null;
         }
     }
 
